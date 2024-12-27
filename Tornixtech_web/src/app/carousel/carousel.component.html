@@ -1,0 +1,9 @@
+<div class="carousel">
+  <div class="carousel-images">
+    <img *ngFor="let image of images; let i = index" [src]="image" [class.active]="i === currentIndex" />
+  </div>
+  <div class="carousel-controls">
+    <button (click)="prev()">&#10094;</button>
+    <button (click)="next()">&#10095;</button>
+  </div>
+</div>
