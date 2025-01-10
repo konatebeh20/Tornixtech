@@ -1,7 +1,222 @@
-<header id="home" class="hero-section">
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Empower Your Business with Innovative Solutions</h1>
+          <p class="mb-3 mt-1">At <span class="b-class-secondary"><strong>Tornixtech</strong></span>, we craft
+            cutting-edge websites and digital solutions to elevate your brand and drive success.</p>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+              class="glightbox btn-watch-video d-flex align-items-center"></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Hero Section -->
+
+  <!-- Products Section -->
+  <section id="products" class="products section">
+
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>Our products</h2>
+      <p>Explore our range of exclusive, high-performance products, developed to optimize your business and stimulate
+        growth.</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos-delay="100">
+          <div class="product-item position-relative text-center">
+            <div class="img">
+              <img src="assets/img/products/product1.jpeg" class="img-fluid" alt="Produit 1">
+            </div>
+            <h4><a routerLink="/cashdash" routerLinkActive="active"
+                class="stretched-link text-center d-block">Cashdash</a></h4>
+            <!-- <h4><a routerLink="/cashdash" routerLinkActive="active" class="stretched-link text-center d-block">Effortless money transfer</a></h4> -->
+            <ul>
+              <li>- Fast : Transfer money instanrly toanyone, anywhere</li>
+              <li>- Secure : Advenced encryption ensurer your transaction are safe</li>
+              <li>- Convention : user-friendly interface for smooth operatoion</li>
+            </ul>
+            <a routerLink="/cashdash" routerLinkActive="active">Cashdash</a>
+            <!-- <button type="button"
+              (click)="navigateToCashdash()"
+              class="got_to-btn"
+              aria-label="Navigate to Cashdash product page">
+              Go to Cashdash
+            </button> -->
+          </div>
+        </div>
+        <!-- End Product Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos-delay="200">
+          <div class="product-item position-relative">
+            <div class="img">
+              <img src="assets/img/products/product2.png" class="img-fluid" alt="Produit 2">
+            </div>
+            <h4><a href="" class="stretched-link text-center d-block">Keletick</a></h4>
+            <h4><a href="" class="stretched-link">Your event booking companion</a></h4>
+            <ul>
+              <li>- Seamless booking : Book tickets for my event with ease</li>
+              <li>- Variety : From concerts to conferences, find events that suit your interests</li>
+              <li>- Notifications : Get reminders and updates about your bookings</li>
+            </ul>
+            <a routerLink="/keletick" routerLinkActive="active">Keletick</a>
+            <!-- <button type="button" class="got_to-btn" (click)="navigateToKeletick()" aria-label="Navigate to Keletick product page">Go to
+              Keletick
+            </button> -->
+          </div>
+        </div>
+        <!-- End Product Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos-delay="300">
+          <div class="product-item position-relative">
+            <div class="img">
+              <img src="assets/img/products/product3.png" class="img-fluid" alt="Produit 3">
+            </div>
+            <h4><a href="" class="stretched-link text-center d-block">Goparadize</a></h4>
+            <h4><a href="" class="stretched-link" routerLinkActive="active">Your airbnb alternative</a></h4>
+            <ul>
+              <li>- Unique Stays : Find and book unique accommodations around the world</li>
+              <li>- Flexible Options : Options for every budget and preference</li>
+              <li>- Notifications : Get reminders and updates about your bookings</li>
+            </ul>
+            <a routerLink="/goparadize" routerLinkActive="active">Goparadize</a>
+          </div>
+        </div>
+        <!-- End Product Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos-delay="400">
+          <div class="product-item position-relative">
+            <div class="img">
+              <img src="assets/img/products/product4.png" class="img-fluid" alt="Produit 4">
+            </div>
+            <h4><a href="" class="stretched-link text-center d-block">Feedsy</a></h4>
+            <h4><a href="" class="stretched-link">Description</a></h4>
+            <ul>
+              <li>- </li>
+              <li>- </li>
+              <li>- </li>
+            </ul>
+            <a routerLink="/keletick" routerLinkActive="active">Keletick</a>
+          </div>
+        </div>
+        <!-- End Product Item -->
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /Products Section -->
+
+
+  <!-- Our partners/Clients Section -->
+  <app-partners></app-partners>
+  <!-- /Our partners/Clients Section -->
+
+  <!-- Services Section -->
+  <app-services></app-services>
+  <!-- /Services Section -->
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
+    <!-- Section Title -->
+    <div class="container section-title">
+      <h2>What they say about us</h2>
+      <p>
+        Our customers' testimonials reflect the quality and impact of our work.
+        Our innovative solutions have enabled them to successfully overcome their technological challenges, turning
+        obstacles into inspiring success stories.
+        Find out how they share their experiences and the results they've achieved with our services.
+      </p>
+    </div><!-- End Section Title -->
+  </section>
+  <app-testimonial></app-testimonial>
+  <!-- /Testimonials Section -->
+
+  <!-- Team Section -->
+  <app-team></app-team>
+  <!-- /Team Section -->
+
+</main>
+
+
+
+<section class="hero-banner">
   <div class="container">
-    <h1>Bienvenue sur notre site web</h1>
-    <p>Découvrez nos services et apprenez-en plus sur nous.</p>
-    <a href="#services" class="btn">Nos Services</a>
+    <div class="row align-items-center min-vh-75">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold mb-4">Solutions Numériques Innovantes</h1>
+        <p class="lead mb-4">Développement web et mobile sur mesure pour propulser votre entreprise vers le succès</p>
+        <button class="btn btn-primary btn-lg me-3">Nos Services</button>
+        <button class="btn btn-outline-primary btn-lg">Contactez-nous</button>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/images/banner-image.svg" alt="Innovation digitale" class="img-fluid">
+      </div>
+    </div>
   </div>
-</header>
+</section>
+
+<section class="why-us bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Pourquoi Nous Choisir?</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="text-center">
+          <i class="bi bi-gear-fill fs-1 text-primary mb-3"></i>
+          <h3 class="h5">Expertise Technique</h3>
+          <p>Technologies modernes et best practices</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="text-center">
+          <i class="bi bi-clock-fill fs-1 text-primary mb-3"></i>
+          <h3 class="h5">Délais Respectés</h3>
+          <p>Livraison dans les temps convenus</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="text-center">
+          <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+          <h3 class="h5">Support 24/7</h3>
+          <p>Une équipe à votre écoute</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="text-center">
+          <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+          <h3 class="h5">Sécurité Garantie</h3>
+          <p>Protection optimale de vos données</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="cta bg-primary text-center text-white py-5 mb-19">
+  <div class="container">
+    <h2 class="mb-2">Prêt à Démarrer Votre Projet?</h2>
+    <p class="mb-2">Contactez-nous dès aujourd'hui pour une consultation gratuite</p>
+    <button class="btn btn-light btn-lg">Contactez-nous</button>
+    <h2 class="mb-2">Prenez contact avec nous pour faire avancer votre projet</h2>
+    <a href="#contact" class="btn btn-light btn-lg">Contactez-nous</a>
+  </div>
+</section> -->
+
+<section class="slds-text-align_center cta text-center text-white py-5 bg-dark">
+  <app-footer></app-footer>
+</section>

@@ -1,0 +1,134 @@
+  /* Featured Products Section */
+
+
+  /* products section */
+  ul {
+    list-style-type: disc; /* Disc pour les points, sans puce spécifique */
+  }
+
+  ul.custom-bullet {
+    list-style-type: square;
+    list-style-type: circle;
+  }
+
+  .featured-products {
+    position: relative;
+    z-index: 3;
+    padding: 5rem 0;
+  }
+
+  .featured-products h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+  .card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-text {
+    color: #666;
+    font-size: 1.25rem;
+  }
+
+  .btn-outline-primary {
+    border: 2px solid #007bff;
+    color: #007bff;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid #ddd; /* Optionnel : pour visualiser les bordures */
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-color: #fff; /* Couleur de fond */
+    overflow: hidden;
+  }
+
+  .product-item h4,
+  .product-item ul {
+    margin-bottom: 16px; /* Espacement entre les sections */
+  }
+
+  .product-item ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;
+  }
+
+  .product-item .stretched-link {
+    display: block; /* Fait en sorte que le lien occupe tout l'espace */
+    width: 100%; /* Assure que le lien couvre toute la largeur de la div */
+    margin: 0 auto; /* Centre le texte horizontalement */
+    font-size: 18px; /* Ajuste la taille du texte */
+    color: #333; /* Couleur du texte */
+    text-decoration: none; /* Supprime les soulignements */
+  }
+
+  .product-item .stretched-link:hover {
+    color: #007bff;
+  }
+
+  .got_to-btn {
+    margin-top: auto;
+    background-color: #189bd7;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .got_to-btn:hover {
+    background-color: #189bd7;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .got_to-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Pour mobile */
+  .got_to-btn:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px #189bd7;
+  }

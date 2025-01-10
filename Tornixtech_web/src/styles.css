@@ -11,19 +11,46 @@
 
 /* @import 'assets/demos/business/business.css'; */
 
-html { height: 100%; }
-body {font-family: 'Manrope', sans-serif; color: #ffffff; height: 100%; background: #f4f5f9; padding: 10% 0 0 0; height: 100%; box-sizing: border-box; }
-.documentation-main {width: 1200px; margin: 0 auto; text-align: center; padding: 0 15px; box-sizing: border-box;}
-.documentation-main img {margin: 0 10px}
+/* html { height: 100%; } */
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif; 
+  color: #ffffff; 
+  height: 100%;  
+  min-height: 100vh; 
+  /* margin: 0;  */
+  /* position: relative;  */
+  /* box-sizing: border-box;  */
+  background: #f4f5f9; 
+  padding: 0; 
+  /* height: 100%;  */
+  /* box-sizing: border-box;  */
+}
+.documentation-main {
+  width: 100%; 
+  max-width: 1200px;
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 0 15px; 
+  box-sizing: border-box;
+}
+.documentation-main img {
+  margin: 0 10px
+}
 h1 {font-family: 'Manrope', sans-serif; font-size: 40px; width: 70%; margin: 0 auto; line-height: 32px; font-weight: 800; color: #232323; margin-bottom: 2%; letter-spacing: -1px}
 p {width: 55%; margin: 0 auto; color: #717580; margin-bottom: 7%; font-size: 18px; line-height: 32px;}
 .logo { margin-bottom: 65px; display: inline-block;}
 
 @media (max-width: 1210px) {
-    body { padding: 8% 0; }
+    /* body { padding: 8% 0; } */
     .documentation-main {width: 992px; }
-    h1 {width: 50%;}
-    p {width: 62%;}
+    h1 { width: 70%; font-size: 32px; }
+    p { width: 75%; font-size: 16px; }
     .documentation-main a img{ width: 44%; }
     .documentation-main a.logo img{ width: 200px;}
 }
@@ -34,6 +61,14 @@ p {width: 55%; margin: 0 auto; color: #717580; margin-bottom: 7%; font-size: 18p
     p {width: 77%;}
     .documentation-main a img{ width: 40%; }
     .documentation-main a.logo img{ width: 175px;}
+}
+
+@media (max-width: 768px) {
+  body { padding: 5% 0; }
+  .documentation-main { max-width: 100%; }
+  h1 { width: 90%; font-size: 24px; line-height: 30px; }
+  p { width: 90%; font-size: 14px; }
+  .logo { margin-bottom: 30px; }
 }
 
 @media (max-width: 767px) {
@@ -51,4 +86,17 @@ p {width: 55%; margin: 0 auto; color: #717580; margin-bottom: 7%; font-size: 18p
 
     .documentation-main a img{ width: 100%; }
     .documentation-main img {margin: 0}
+}
+
+@media (max-width: 480px) {
+  .documentation-main { padding: 10px; }
+  h1 { font-size: 18px; line-height: 24px; }
+  p { font-size: 12px; }
+  .logo { margin-bottom: 20px; }
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Préserve le ratio de l'image */
+  display: block;
 }

@@ -26,9 +26,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
               "src/assets/css/vendors.min.css",
-              "src/assets/css/style.min.css",
               "src/assets/css/style.min.css",
               "src/assets/css/responsive.css"
             ],
@@ -36,7 +37,11 @@
               "assets/css/vendors.min.css",
               "assets/css/style.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

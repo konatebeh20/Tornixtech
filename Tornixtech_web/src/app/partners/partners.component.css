@@ -1,0 +1,55 @@
+  /* Clients Section */
+  .clients-section {
+    background: #f8f9fa;
+    /* padding: 5rem 0; */
+    padding: 50px 0;
+  }
+
+  .clients-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .client-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .client-carousel {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .client-logo {
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  .client-logo img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(100%);
+    /*height: auto;
+    display: block;
+    */
+    transform: translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+  }
+
+  .client-logo img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+
+  .client-logo {
+    margin-bottom: 30px;
+  }
